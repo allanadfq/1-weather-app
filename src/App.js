@@ -3,7 +3,7 @@ import "./GlobalStyle.css";
 import apiWeather from "./services/api";
 import Search from "./components/search";
 import ShowLocation from "./components/showLocation";
-import ShowForecast from "./components/showForecast";
+import ShowCurrent from "./components/showCurrent";
 
 function App() {
   const apiKey = "AYdl5aagM6A8r4ZrVoIAJfff0MSTJFmI";
@@ -45,7 +45,7 @@ function App() {
         setData={setLocation}
       />
       <ShowLocation data={location} />
-      <ShowForecast data={current} />
+      <ShowCurrent data={current} />
     </div>
   );
 }

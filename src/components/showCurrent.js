@@ -1,13 +1,14 @@
 import React from "react";
 import Logo from "../images/icons/35.svg";
 
-const ShowForecast = ({ data }) => {
+const ShowCurrent = ({ data }) => {
+  const [icon, setIcon] = React.useState("");
   return (
     <>
       {data.map((item) => (
         <div key={item.temperature}>
           <img src={Logo} width={70} alt="icon" />
-          <h3>{item.temperature}°</h3>
+          <h3>{item.temperature}°C</h3>
           <br />
           <span>{item.text}</span>
           <br />
@@ -20,4 +21,4 @@ const ShowForecast = ({ data }) => {
   );
 };
 
-export default ShowForecast;
+export default ShowCurrent;
