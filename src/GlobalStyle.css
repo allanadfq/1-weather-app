@@ -12,7 +12,7 @@ body {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .container input[type="text"] {
   width: 57%;
@@ -47,7 +47,21 @@ body {
 }
 
 @media (max-width: 576px) {
-  body {
-    background-color: darkgrey;
+  .container {
+    max-width: 80%;
+    height: 490px;
+    padding: 7px;
+  }
+  .container input[type="text"] {
+    width: 80%;
+    padding: 13px;
+    font-size: 14px;
+  }
+  .container button {
+    margin-left: 3px;
+    width: 80%;
+    padding: 14px;
+    opacity: 1;
+    font-size: 14px;
   }
 }

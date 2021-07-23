@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ShowResult({ data }) {
+export default function ShowLocation({ data }) {
   return (
     <>
       {data.length ? (
