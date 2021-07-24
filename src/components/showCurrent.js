@@ -1,15 +1,20 @@
 import React from "react";
-import Logo from "../images/icons/35.svg";
 
 const ShowCurrent = ({ data }) => {
-  const [icon, setIcon] = React.useState("");
   return (
     <>
+      {/* <h2>Dados atuais da cidade</h2> */}
       {data.map((item) => (
         <div key={item.temperature}>
-          <img src={Logo} width={70} alt="icon" />
-          <h3>{item.temperature}°C</h3>
-          <br />
+          {/* <hr /> */}
+          <div className="weather-current">
+            <img
+              src={require(`../images/icons/${item.icon}.svg`).default}
+              alt="icon"
+            />
+            <span>{item.temperature}°C</span>
+          </div>
+          <hr />
           <span>{item.text}</span>
           <br />
           <span>Umidade: {item.humidity}%</span>

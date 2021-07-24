@@ -5,14 +5,13 @@ export default function ShowLocation({ data }) {
     <>
       {data.length ? (
         <>
-          <h2>A previsão de hoje é</h2>
           {data.map((item) => (
-            <div key={item.key}>
-              <span>{item.country}</span>
-              <br />
+            <div key={item.key} className="weather-city">
               <span>
                 {item.city}, {item.state}
               </span>
+              <br />
+              <span>{item.country}</span>
             </div>
           ))}
         </>

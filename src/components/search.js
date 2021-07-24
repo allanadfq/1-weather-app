@@ -1,7 +1,7 @@
 import React from "react";
 import apiWeather from "../services/api";
 
-export default function Search({ cityName, setCityName, data, setData }) {
+export default function Search({ cityName, setCityName, setData, setLoading }) {
   const apiKey = "AYdl5aagM6A8r4ZrVoIAJfff0MSTJFmI";
 
   const handleChangeNameCity = (e) => {
@@ -14,6 +14,7 @@ export default function Search({ cityName, setCityName, data, setData }) {
 
     if (cityName) {
       //fetching the location key from locations API
+      setLoading(true);
       apiWeather
         .get(
           `locations/v1/cities/search?apikey=${apiKey}&q=${cityName}&language=pt-br`
@@ -28,9 +29,11 @@ export default function Search({ cityName, setCityName, data, setData }) {
             },
           ]);
         })
-        .catch((err) =>
-          alert("ERROR IN SEARCH| Please, contact the admin " + err)
-        )
+        .catch((err) => {
+          console.log(err);
+          alert("ERROR IN SEARCH| Please, contact the admin " + err);
+          setLoading(false);
+        })
         .finally(() => {
           setCityName("");
         });
