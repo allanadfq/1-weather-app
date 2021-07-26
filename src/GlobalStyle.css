@@ -1,17 +1,35 @@
-body {
-  background-color: #131862;
-  /* background-color: #ffe85d; */
+.master-container-day {
+  background-color: #ffe85d;
+  min-height: 100vh;
 }
+.master-container-night {
+  background-color: #131862;
+  min-height: 100vh;
+}
+
+.empurra-container {
+  height: 50px;
+}
+
 .container {
   width: 40%;
   min-width: 250px;
   height: 510px;
   padding: 10px;
-  margin: 50px auto;
+  margin: 0 auto;
   border: 4px solid #ddd;
   border-radius: 20px;
-  background: #0000ffa5 url("./images/night.svg") center/cover no-repeat;
+  color: #000;
+  background: #0000ffa5 url("./images/weather.gif") center/cover no-repeat;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.attBgContainer-day {
+  background: #0000ffa5 url("./images/day3.gif") center/cover no-repeat;
+}
+.attBgContainer-night {
+  background: #0000ffa5 url("./images/night2.gif") center/cover no-repeat;
+}
+.attBgContainer-night h1 {
   color: #fff;
 }
 
@@ -60,7 +78,7 @@ body {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background-color: #e9e6e6a1;
+  background-color: #ccc;
 }
 
 .weather-current {

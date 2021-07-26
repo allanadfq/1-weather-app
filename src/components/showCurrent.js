@@ -1,9 +1,17 @@
 import React from "react";
 
-const ShowCurrent = ({ data }) => {
+const ShowCurrent = ({ data, setContainerStyle, setMasterContainerColor }) => {
+  React.useEffect(() => {
+    if (data[0].time === false) {
+      setContainerStyle("container attBgContainer-night");
+      setMasterContainerColor("master-container-night");
+    } else {
+      setContainerStyle("container attBgContainer-day");
+      setMasterContainerColor("master-container-day");
+    }
+  }, [data, setContainerStyle, setMasterContainerColor]);
   return (
     <>
-      {/* <h2>Dados atuais da cidade</h2> */}
       {data.map((item) => (
         <div key={item.temperature}>
           {/* <hr /> */}
