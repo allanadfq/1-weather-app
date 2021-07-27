@@ -30,7 +30,7 @@ export default function Search({ cityName, setCityName, setData, setLoading }) {
           ]);
         })
         .catch((err) => {
-          console.log(err);
+          console.log(err.data);
           alert("ERROR IN SEARCH| Please, contact the admin " + err);
           setLoading(false);
         })
