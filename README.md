@@ -1,5 +1,4 @@
-# Hosted in Netlify: [https://1-weather-app.netlify.app/]
-# Getting Started with Create React App
+# [Weather-App](https://1-weather-app.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
