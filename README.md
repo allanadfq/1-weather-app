@@ -1,6 +1,6 @@
 # [Weather-App](https://1-weather-app.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was inspired by app-ideas repo(https://github.com/florinpop17/app-ideas). A simple app, for you search how it's the current weather on a city.
 
 ## Available Scripts
 
