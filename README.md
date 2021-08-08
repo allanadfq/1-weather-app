@@ -2,16 +2,11 @@
 
 This project was inspired by app-ideas repo(https://github.com/florinpop17/app-ideas). A simple app, for you search how it's the current weather on a city.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-
+<p align="center">
+ <a href="#objetivo">Objetivo</a> •
+ <a href="#roadmap">Roadmap</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#contribuicao">Contribuição</a> • 
+ <a href="#licenc-a">Licença</a> • 
+ <a href="#autor">Autor</a>
+</p>
